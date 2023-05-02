@@ -9,7 +9,7 @@
 ################################
 # Luiz Andrade - Calculates stops needed with starships in space - 02/05/2023
 ################################
-from sys import exit
+from sys import argv, exit
 import requests
 from math import floor
 
