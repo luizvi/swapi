@@ -33,11 +33,16 @@ else:
     exit(1)
 
 # Numeric validation for travel distance
-travel_distance = input("Insert travel distance: ")
-while not travel_distance.isnumeric():
-    print("Please, use only numbers")
-#    travel_distance = input("Insert travel distance: ")
-    travel_distance = 1000
+if len(argv) > 1:
+    travel_distance = argv[1]
+    if not travel_distance.isnumeric():
+        print('Please, use only numbers on next execution')
+        exit(1)
+else:
+    travel_distance = input('Insert travel distance: ')
+    while not travel_distance.isnumeric():
+        print('Please, use only numbers')
+        travel_distance = input('Insert travel distance: ')
 
 print('STARSHIP MODEL: STOPS NEEDED')
 
