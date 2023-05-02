@@ -36,7 +36,8 @@ else:
 travel_distance = input("Insert travel distance: ")
 while not travel_distance.isnumeric():
     print("Please, use only numbers")
-    travel_distance = input("Insert travel distance: ")
+#    travel_distance = input("Insert travel distance: ")
+    travel_distance = 1000
 
 print('STARSHIP MODEL: STOPS NEEDED')
 
